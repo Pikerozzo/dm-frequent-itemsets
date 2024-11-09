@@ -174,3 +174,6 @@ Dockerfile
 requirements.txt
 
 src/*.csv
+src/*_UML.txt
+
+src/data/
