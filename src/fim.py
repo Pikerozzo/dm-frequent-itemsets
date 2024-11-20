@@ -35,7 +35,7 @@ def main():
     transactions, items = load_data(subsample_size=100_000)
     
     # Create the algorithm instance
-    algorithm = MultiHash(tot_megabytes=1000, tot_hash_tables=2)
+    algorithm = MultiHash(tot_megabytes=500, tot_hash_tables=2)
 
     # Find frequent pairs 
     algorithm.find_frequent_itemsets(transactions=transactions.product_id, itemset_size=2, min_sup_norm=0.01)
